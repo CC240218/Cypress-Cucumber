@@ -15,7 +15,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       on(
         "file:preprocessor",
-        createBundler({
+        createBundler({ 
           plugins: [createEsbuildPlugin.default(config)],
         })
       );
